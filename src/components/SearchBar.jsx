@@ -1,5 +1,9 @@
 import React, { useState } from 'react';
 import '../style/components/searchbar.css'
+//Font Awesome Imports
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faMagnifyingGlass} from '@fortawesome/free-solid-svg-icons';
+
 
 function SearchBar({ onSearch }) {
     const [searchTerm, setSearchTerm] = useState('');
@@ -14,13 +18,13 @@ function SearchBar({ onSearch }) {
 
     return (
         <div className='input-01'>
+         <button onClick={handleSearch}><FontAwesomeIcon icon={faMagnifyingGlass} className="icons header-icon" /></button>   
             <input
                 type="text"
                 value={searchTerm}
                 onChange={handleInputChange}
-                placeholder="Rechercher par nom de produits, marque, catégorie ..."
+                placeholder="Rechercher par nom de produit, marque, catégorie ..."
             />
-            <button onClick={handleSearch}>Rechercher</button>
         </div>
     );
 }
