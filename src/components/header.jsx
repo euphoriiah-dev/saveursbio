@@ -32,6 +32,9 @@ function Header () {
                     {/* Cart button will be link with cart number of articles */}
                     <Link to='#'>
                         <button className="cart-button buttons">
+                            <div className="cart-pop">
+                                {/* Contain number of articles in cart */}
+                            </div>
                         </button>
                     </Link>  
                 </section>

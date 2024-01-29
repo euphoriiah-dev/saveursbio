@@ -42,11 +42,14 @@
     border-radius: 10px;
     border: none;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.377);
-    background-color: white; 
+    background-color: white;
+    transition: 600ms ease;
 }
 .header-container .search-and-buttons .buttons-header button:hover{
    background-color: var(--soft-green);
    box-shadow: 0px 0px 15px rgba(0, 42, 14, 0.485);
+   transition-duration: 300ms;
+   transform: scale(1.1);
 }
 .header-container .search-and-buttons .buttons-header .user-button{
 margin: 0 1.5em 0 1.5em;
