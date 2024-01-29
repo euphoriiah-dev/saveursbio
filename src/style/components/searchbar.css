@@ -14,7 +14,7 @@
 }
 input{
     width: 30em;
-    height: 3em;
+    height: 3.5em;
     border-radius: 0 15px 15px 0;
     border: none;
     padding: 0.3em;
@@ -30,4 +30,7 @@ input:focus{
 } 
 .input-01 button .header-icon{
     color: var(--main-green);
+}
+input::placeholder {
+    opacity: 0.5;
 }

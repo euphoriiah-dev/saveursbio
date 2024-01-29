@@ -23,8 +23,17 @@ function Header () {
                 <section className="search-bar">
                     <SearchBar onSearch={handleSearch} />
                 </section>
-                <section className="buttons-1">
+                <section className="buttons-header">
+                    <Link to='#'> 
+                        <button className="user-button buttons">
 
+                        </button>
+                    </Link>
+                    {/* Cart button will be link with cart number of articles */}
+                    <Link to='#'>
+                        <button className="cart-button buttons">
+                        </button>
+                    </Link>  
                 </section>
 
             </div>

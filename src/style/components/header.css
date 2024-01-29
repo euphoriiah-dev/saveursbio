@@ -1,6 +1,7 @@
 :root{
     --main-green: #5c7e4c;
     --alternative-green:#9ebe8f;
+    --soft-green: #e4ede0;
     --main-yellow: #efc056;
     --alternative-yellow: #FCE6B4;
     --main-sienna: #D68F6D;
@@ -18,14 +19,35 @@
     align-items: center;
     margin:2em;
     width: 20%;
+    min-width: 200px;
     height: 100px;
 }
 .header-container .logo img{
-    width: 100%;
+    max-width: 100%;
 }
 .header-container .search-and-buttons{
-    width: 50%;
+    width: 80%;
     display: flex;
     justify-content: flex-end;
     align-items: center;
+}
+.header-container .search-and-buttons .buttons-header{
+    width: 20%;
+    display: flex;
+    justify-content: flex-start;
+}
+.header-container .search-and-buttons .buttons-header button{
+    width: 4em;
+    height: 4em;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.377);
+    background-color: white; 
+}
+.header-container .search-and-buttons .buttons-header button:hover{
+   background-color: var(--soft-green);
+   box-shadow: 0px 0px 15px rgba(0, 42, 14, 0.485);
+}
+.header-container .search-and-buttons .buttons-header .user-button{
+margin: 0 1.5em 0 1.5em;
 }
