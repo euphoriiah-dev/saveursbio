@@ -1,4 +1,17 @@
 .header-container{
     width: 100%;
-    background-color: white;
+    display: flex;
+    height: 150px;
+    background-color: rgb(206, 164, 164);
+    flex-direction: row;
+}
+.header-container .logo{
+    display: flex;
+    align-items: center;
+    margin:2em;
+    width: 20%;
+    height: 100px;
+}
+.header-container .logo img{
+    width: 100%;
 }
