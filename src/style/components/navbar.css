@@ -2,6 +2,7 @@
     --main-green: #5c7e4c;
     --alternative-green:#9ebe8f;
     --soft-yellow: #fcdb92;
+    --very-soft-yellow:#fdedca;
     --main-yellow: #efc056;
     --alternative-yellow: #FCE6B4;
     --main-sienna: #D68F6D;
@@ -27,6 +28,9 @@
   padding: 0.8% 0 0 0.8%;
   border-right: solid 1px white;
 }
+.main-nav .first-nav-li:hover{
+  background-color: var(--very-soft-yellow);
+}
 .main-nav .blog{
   width: 100px;
 }
@@ -48,10 +52,11 @@
   padding: 10px;
   top: 100%;
   left: 0;
-  width: 210px; /* Ajuste la largeur à celle de la catégorie principale */
+  width: 213px; 
   transition: opacity 0.3s ease;
-  opacity: 0; /* Défini l'opacité initiale à 0 */
-  animation: fadeIn 0.6s ease; /* Utilise l'animation "fadeIn" sur une durée de 0.3 secondes */
+  opacity: 0; 
+  animation: fadeIn 0.6s ease;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.377);
 }
 
 .sub-menu li {
@@ -62,7 +67,6 @@
 .sub-menu li:hover{
   background-color: var(--soft-yellow);
   width: 210px;
-  transition: ease 200ms;
 }
 .sub-menu a {
   color: #000000;
