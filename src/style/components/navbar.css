@@ -1,14 +1,76 @@
 :root{
     --main-green: #5c7e4c;
     --alternative-green:#9ebe8f;
-    --soft-green: #e4ede0;
+    --soft-yellow: #fcdb92;
     --main-yellow: #efc056;
     --alternative-yellow: #FCE6B4;
     --main-sienna: #D68F6D;
     --alternative-sienna: #EABDA8;   
   }
-.navbar-container{
-  width: 100%;
-  height: 3em;
+  .main-nav {
+    background-color: var(--alternative-yellow);
+}
+
+.main-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.main-nav li {
+  display: inline-block;
+  position: relative;
+}
+.main-nav .first-nav-li{
+  width: 200px;
+  height: 50px;
+  padding: 0.5em 0 0 0;
+  border-right: solid 1px white;
+}
+.main-nav a {
+    color: black;
+    text-decoration: none;
+    padding: 10px 30px;
+    display: block;
+}
+
+/* Styles des sous-catégories */
+.sub-menu {
+  display: none;
+  position: absolute;
   background-color: var(--alternative-yellow);
+  padding: 10px;
+  top: 100%;
+  left: 0;
+  width: 200px; /* Ajuste la largeur à celle de la catégorie principale */
+  transition: opacity 0.3s ease;
+  opacity: 0; /* Défini l'opacité initiale à 0 */
+  animation: fadeIn 0.6s ease; /* Utilise l'animation "fadeIn" sur une durée de 0.3 secondes */
+}
+
+.sub-menu li {
+  display: inline-block; /* Affiche les sous-catégories horizontalement */
+  margin-right: 10px; /* Ajoute un espacement entre les sous-catégories */
+}
+.sub-menu li:hover{
+  background-color: var(--soft-yellow);
+  width: 200px;
+  transition: ease 200ms;
+}
+.sub-menu a {
+  color: #000000;
+  text-decoration: none;
+  padding: 10px 20px; /* Utilise la même taille que la catégorie principale */
+  display: block;
+}
+
+/* Effet de survol pour révéler les sous-catégories */
+.main-nav li:hover .sub-menu {
+  display: block;
+  opacity: 1; /* Change l'opacité à 1 pour révéler les sous-catégories */
+}
+/* Keyframe setting */
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
 }
