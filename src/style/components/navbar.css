@@ -24,8 +24,14 @@
 .main-nav .first-nav-li{
   width: 200px;
   height: 50px;
-  padding: 0.5em 0 0 0;
+  padding: 0.8% 0 0 0.8%;
   border-right: solid 1px white;
+}
+.main-nav .blog{
+  width: 100px;
+}
+.main-nav .contact{
+  width: 140px;
 }
 .main-nav a {
     color: black;
@@ -42,7 +48,7 @@
   padding: 10px;
   top: 100%;
   left: 0;
-  width: 200px; /* Ajuste la largeur à celle de la catégorie principale */
+  width: 210px; /* Ajuste la largeur à celle de la catégorie principale */
   transition: opacity 0.3s ease;
   opacity: 0; /* Défini l'opacité initiale à 0 */
   animation: fadeIn 0.6s ease; /* Utilise l'animation "fadeIn" sur une durée de 0.3 secondes */
@@ -51,10 +57,11 @@
 .sub-menu li {
   display: inline-block; /* Affiche les sous-catégories horizontalement */
   margin-right: 10px; /* Ajoute un espacement entre les sous-catégories */
+  padding: 5% 0 5% 0;
 }
 .sub-menu li:hover{
   background-color: var(--soft-yellow);
-  width: 200px;
+  width: 210px;
   transition: ease 200ms;
 }
 .sub-menu a {

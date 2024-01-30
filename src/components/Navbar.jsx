@@ -26,6 +26,15 @@ function Navbar () {
         <li className="first-nav-li">
             <a href="#">A propos de nous</a>
         </li>
+        <li className="first-nav-li blog">
+            <a href="#">Blog</a>
+        </li>
+        <li className="first-nav-li">
+            <a href="#">Nous rejoindre</a>
+        </li>
+        <li className="first-nav-li contact">
+            <a href="#">Contact</a>
+        </li>
     </ul>
         </nav>
     )
