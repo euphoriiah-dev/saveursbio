@@ -1,0 +1,31 @@
+:root{
+    --main-green: #5c7e4c;
+    --alternative-green:#9ebe8f;
+    --soft-green: #e4ede0;
+    --main-yellow: #efc056;
+    --alternative-yellow: #FCE6B4;
+    --main-sienna: #D68F6D;
+    --alternative-sienna: #EABDA8;   
+  }
+.banner-container{
+    width: 100%;
+    height: 400px;
+    z-index: -1;
+    margin: 3.5em 0 0 0;
+}
+.banner-container img{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    filter: brightness(50%);
+    position: relative;
+    z-index: 0;
+}
+.banner-container h1{
+    font-size: 50px;
+    color: white;
+    position: absolute;
+    font-style: italic;
+    top: 4em;
+    left: 35%;
+}

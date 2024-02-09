@@ -5,3 +5,8 @@
     margin: 0;
     background-color: rgb(227, 219, 219);
 }
+.main-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
