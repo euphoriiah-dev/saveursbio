@@ -1,0 +1,30 @@
+:root{
+    --main-green: #5c7e4c;
+    --alternative-green:#9ebe8f;
+    --soft-green: #e4ede0;
+    --main-yellow: #efc056;
+    --alternative-yellow: #FCE6B4;
+    --main-sienna: #D68F6D;
+    --alternative-sienna: #EABDA8;   
+  }
+
+.spotlight-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.spotlight-container h2{
+    display: flex;
+    font-family: 'Poppins';
+    font-weight: 700;
+    font-size: 18px;
+}
+.spotlight-container .title-line {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 3.5em;
+    background-color: var(--soft-green);
+}

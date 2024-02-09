@@ -17,17 +17,17 @@ function News () {
                 <h1>En Bio, c'est mieux !</h1>
                 <div className="banner-icons">
                     <a href="#"> 
-                        <FontAwesomeIcon icon={faSquareFacebook} />
+                        <FontAwesomeIcon className="bann-icon" icon={faSquareFacebook} />
                     </a>
                     <a href="#">
-                        <FontAwesomeIcon icon={faSquareInstagram} />
+                        <FontAwesomeIcon className="bann-icon" icon={faSquareInstagram} />
                     </a>
                     <a href="#">
-                        <FontAwesomeIcon icon={faSquareXTwitter} />
+                        <FontAwesomeIcon className="bann-icon" icon={faSquareXTwitter} />
                     </a>
                 </div>
                 <h2>
-
+                    Rejoignez-nous sur les réseaux
                 </h2>
              </section>
         </section>
