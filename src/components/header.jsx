@@ -3,7 +3,7 @@ import React from "react"
 import "../style/components/header.css"
 import { Link } from "react-router-dom"
 import Logo from '../assets/img/saveursbio_logo.png'
-import SearchBar from '../components/SearchBar'
+import SearchBar from './SearchBar'
 
 function Header () {
     // Fonction de recherche
